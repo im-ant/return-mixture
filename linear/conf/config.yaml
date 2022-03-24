@@ -1,0 +1,19 @@
+defaults:
+  - agent: sf_return
+  - env: perf_bin_tree
+  - hydra/job_logging: disabled
+
+training:
+  num_episodes: 20
+  seed: 0
+  save_checkpoint: null
+
+logging:
+  dir_path: './'
+  print_freq: 100
+
+env: {}
+
+agent:
+  kwargs:
+    gamma: 0.9
